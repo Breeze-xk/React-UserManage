@@ -1,0 +1,186 @@
+@import '../../assets/styles/base.less';
+
+.login {
+  width: 100%;
+  height: 100vh;
+  background: url('http://39.100.237.144:8080/production-sub-path/assets/img/bj.54fe75c9.png')
+    no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divDisable {
+  pointer-events: 'none';
+}
+.center-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 400px;
+
+  .mod-new-reg {
+    font-family: PingFang-SC-Regular, Helvetica, 'Microsoft Yahei', '微软雅黑';
+    color: #fff;
+  }
+
+  .mod-new-reg-logo {
+    position: fixed;
+    left: 70px;
+    top: 60px;
+    height: 40px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .mod-new-reg-text {
+    position: fixed;
+    left: 195px;
+    top: 314px;
+  }
+
+  .mod-new-reg-text h3 {
+    font-size: 54px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .mod-new-reg-text p {
+    font-size: 32px;
+    letter-spacing: 4.81px;
+    font-weight: 300;
+    margin-top: 6px;
+  }
+
+  .left {
+    width: 50%;
+    height: 100%;
+    // background: url('http://www.tenio.com/upload/201811/1541153391175657.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .registerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register_box {
+    height: 400px;
+    width: 380px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 20px 0 0 0;
+    }
+
+    .login-box {
+      width: 100%;
+      margin-top: 20px;
+
+      // background-color: pink;
+      :global {
+        .ant-form-item-label {
+          width: 100px;
+        }
+
+        .ant-form-item-control-input {
+          width: 230px;
+        }
+      }
+      .verifyLabel::before {
+        display: inline-block;
+        margin-right: 4px;
+        color: #ff4d4f;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: '*';
+      }
+      .verification {
+        width: 228px;
+        display: inline-block;
+
+        :global {
+          .ant-form-item-label {
+            vertical-align: inherit;
+          }
+
+          .ant-form-item-control {
+            width: 120px;
+            display: inline-block;
+          }
+
+          .ant-form-item-control-input {
+            width: 120px;
+          }
+        }
+      }
+
+      .forgetPwd {
+        width: 242px;
+        display: inline-block;
+
+        :global {
+          .ant-form-item-label {
+            vertical-align: inherit;
+          }
+
+          .ant-form-item-control {
+            width: 120px;
+            display: inline-block;
+          }
+
+          .ant-form-item-control-input {
+            width: 120px;
+          }
+        }
+      }
+
+      .login-btn {
+        width: 100%;
+        text-align: center;
+
+        button {
+          width: 200px;
+          border-radius: 10px;
+          margin-top: 10px;
+        }
+      }
+
+      .register-btn {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 34px;
+      }
+    }
+
+    :global {
+      .ant-btn {
+        .ant-statistic {
+          display: inline-block;
+        }
+
+        .ant-statistic-content {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .simple-verify .verify-tips  {
+    margin-left: 12px;
+  } 
+}

@@ -1,0 +1,22 @@
+@import '@/assets/styles/base.less';
+
+.detailFormBox{
+  display: flex;
+  height: 100%;
+  padding:20px 0;
+  .formTree{
+    width:200px;
+  }
+  .searchForm{
+    width: calc(100% - 200px);
+    height: 60px;
+    :global{
+      .ant-form-item-label{
+        width: 90px;
+      }
+      .ant-form-item-control{
+        width: 135px;
+      }
+    }
+  }
+}

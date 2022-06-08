@@ -1,0 +1,42 @@
+@import '../../assets/styles/base.less';
+
+.jsonConfig {
+  :global {
+    .ant-card {
+      margin: 20px 6px;
+      border-radius: 7px;
+      border-color: transparent;
+      box-shadow: 0 1px 2px -2px #00000029, 0 3px 6px #0000001f, 0 5px 12px 4px #00000017;
+      height: 86vh;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+    .ant-card-body {
+      padding: 16px;
+    }
+  }
+}
+
+
+.jsonConfig {
+  display: flex;
+
+  .list-item-box {
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px -2px #00000029, 0 3px 6px #0000001f, 0 5px 12px 4px #00000017;
+    border-color: transparent;
+    padding: 8px;
+
+    .items {
+      color: cadetblue;
+      margin: 8px 2px;
+      text-decoration: underline;
+      font-size: 15px;
+      cursor: pointer;
+      width: max-content;
+    }
+  }
+}

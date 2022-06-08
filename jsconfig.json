@@ -1,0 +1,18 @@
+{
+  "include": [
+    "**/*"
+  ],
+  "exclude": ["node_modules","logs","run","upload"],
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "~utils/*": ["src/utils/*"],
+        "~components/*": ["src/components/*"],
+        "~data/*": ["src/data/*"],
+        "~services/*": ["src/services/*"],
+        "~public/*": ["src/public/*"],
+        "~config/*": ["src/config/*"]
+    }
+  }
+}
